@@ -1,0 +1,146 @@
+body {
+    background-image: url('R.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .logo {
+    margin-left: 10px;
+    width: 45px;
+    height: auto;
+  }
+  
+  .search-container {
+    position: relative;
+  }
+  
+  .search {
+    padding-right: 30px;
+    background-color: white;
+    border: 5px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50px;
+    width: 300px;
+  }
+  
+  .submit-image {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: auto;
+  }
+  
+  .profile {
+    margin-right: 10px;
+    width: 40px;
+    height: auto;
+  }
+  
+  h2 {
+    color: #C5BBB9;
+    font-family: 'Public Sans';
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+
+  #map-container {
+    width: 100%;
+    height: 40%;
+    margin-top: 230px;
+    margin-left: 100px;
+  }
+  #map-container img {
+    max-width: 100%; 
+    max-height: 100%; 
+  }
+  
+  #text-container {
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    margin-top: 230px;
+    margin-left: 50px;
+    color: #C5BBB9;
+    font-family: 'Public Sans';
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    font-size: 20px;
+    margin-bottom: 50px;
+     position: relative;
+  }
+  li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    width: 13px;
+    height: 13px;
+    background-image: url("icons8-pin-50.png");
+    background-size: cover;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #C5BBB9;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    text-align: center;
+    margin-top: 200px;
+  }
+  .paragraph{
+    width: 50%;
+    text-align: justify;
+    margin-left: 53.5%;
+    margin-top: 20px; 
+  }
+
+  @media only screen and (max-width: 768px) {
+    .search {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .search {
+        width: 150px;
+    }
+    
+    .paragraph {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+  
